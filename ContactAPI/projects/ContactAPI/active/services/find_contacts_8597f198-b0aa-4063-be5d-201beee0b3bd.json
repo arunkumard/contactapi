@@ -1,0 +1,31 @@
+{
+  "id" : "8597f198-b0aa-4063-be5d-201beee0b3bd",
+  "name" : "find_contacts",
+  "description" : "find contacts",
+  "iserror" : false,
+  "no_of_errors" : 0,
+  "service_input" : null,
+  "service_output" : null,
+  "service_input_json_schema" : null,
+  "service_output_json_schema" : null,
+  "type" : "EVENTDRIVEN",
+  "error_handler" : false,
+  "tag" : "EMPTY",
+  "active" : true,
+  "is_changed" : false,
+  "comment" : null,
+  "base_tag" : "V1",
+  "test_input" : {
+    "type" : "jsonb",
+    "value" : "[]",
+    "null" : false
+  },
+  "test_input_structure" : {
+    "type" : "jsonb",
+    "value" : "[]",
+    "null" : false
+  },
+  "copied_from_id" : null,
+  "copied_from_name" : null,
+  "revision" : 1
+}

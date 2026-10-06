@@ -1,0 +1,15 @@
+{
+  "urls" : "north-america-se-check.sandbox.fusion.services.axway.com,north-america-se-design.sandbox.fusion.services.axway.com,north-america-se-live.sandbox.fusion.services.axway.com",
+  "domains" : "cx80-c,cx80-d,cx80-l",
+  "tenantVersion" : 253,
+  "masterVersion" : 1107,
+  "deployedVersion" : "1.18.0",
+  "aiEntitlement" : true,
+  "date" : "2026-10-06 02:16:21.835",
+  "projects" : [ {
+    "projectId" : "9e8d8265-b148-4a31-872b-4e33bb68f940",
+    "projectName" : "ContactAPI",
+    "projectVersion" : "EMPTY",
+    "projectType" : "Fusion"
+  } ]
+}

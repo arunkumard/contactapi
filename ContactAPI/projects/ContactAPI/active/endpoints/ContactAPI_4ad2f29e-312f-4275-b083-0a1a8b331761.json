@@ -1,0 +1,27 @@
+{
+  "id" : "4ad2f29e-312f-4275-b083-0a1a8b331761",
+  "name" : "ContactAPI",
+  "description" : "ContactAPI",
+  "connection_config" : "{\"112c1cb8-4b9e-4d1a-a042-0bd031dc7d05\":{\"HTTPSEndpoint\":{\"id\":null,\"name\":\"ContactAPI\",\"retry\":{\"count\":1,\"afterMs\":0},\"active\":true,\"client\":{\"id\":null},\"details\":{\"url\":\"lvz26.wiremockapi.cloud/\",\"port\":0,\"httpVersion\":\"HTTP_2\",\"acceptedTLSVersions\":null,\"sslPublicCertificate\":null},\"partners\":null,\"protocol\":\"HTTPS\",\"direction\":\"OUTGOING\",\"description\":\"ContactAPI\",\"certificateId\":null,\"authentication\":{\"type\":\"API_KEY\",\"user\":null,\"token\":null,\"scopes\":null,\"headers\":[],\"password\":null,\"resource\":null,\"client_id\":null,\"token_url\":null,\"access_key\":null,\"aws_region\":null,\"grant_type\":null,\"privateKey\":null,\"proxy_host\":null,\"proxy_port\":null,\"secret_key\":null,\"token_type\":null,\"certificate\":null,\"cookie_name\":null,\"http_method\":null,\"absolute_url\":null,\"api_key_name\":\"apikey\",\"service_name\":null,\"api_key_value\":\"Acces2backend\",\"authorize_url\":null,\"client_secret\":null,\"proxy_enabled\":null,\"session_token\":null,\"proxy_password\":null,\"proxy_protocol\":null,\"proxy_username\":null,\"responseTimeout\":0,\"api_key_location\":\"header\",\"safe_resource_path\":\"/contacts\",\"optional_parameters\":[],\"privateKeyPassphrase\":null,\"proxy_authentication\":null,\"aws_signature_location\":null,\"usePersistentConnections\":false,\"authorization_header_name\":null,\"authorization_header_prefix\":null,\"client_credentials_location\":null},\"sslPublickeyId\":null,\"isSSLCertificate\":null,\"connectionTimeoutInMS\":60000}},\"81e359da-9454-40ba-b968-1273a3b8e37b\":{\"HTTPSEndpoint\":{\"id\":null,\"name\":\"ContactAPI\",\"retry\":{\"count\":1,\"afterMs\":0},\"active\":true,\"client\":{\"id\":null},\"details\":{\"url\":\"lvz26.wiremockapi.cloud/\",\"port\":0,\"httpVersion\":\"AUTO\",\"acceptedTLSVersions\":null,\"sslPublicCertificate\":null},\"partners\":null,\"protocol\":\"HTTPS\",\"direction\":\"OUTGOING\",\"description\":\"ContactAPI\",\"certificateId\":null,\"authentication\":{\"type\":\"NONE\",\"user\":null,\"token\":null,\"scopes\":null,\"headers\":[],\"password\":null,\"resource\":null,\"client_id\":null,\"token_url\":null,\"access_key\":null,\"aws_region\":null,\"grant_type\":null,\"privateKey\":null,\"proxy_host\":null,\"proxy_port\":null,\"secret_key\":null,\"token_type\":null,\"certificate\":null,\"cookie_name\":null,\"http_method\":null,\"absolute_url\":null,\"api_key_name\":null,\"service_name\":null,\"api_key_value\":null,\"authorize_url\":null,\"client_secret\":null,\"proxy_enabled\":null,\"session_token\":null,\"proxy_password\":null,\"proxy_protocol\":null,\"proxy_username\":null,\"responseTimeout\":0,\"api_key_location\":null,\"safe_resource_path\":null,\"optional_parameters\":[],\"privateKeyPassphrase\":null,\"proxy_authentication\":null,\"aws_signature_location\":null,\"usePersistentConnections\":false,\"authorization_header_name\":null,\"authorization_header_prefix\":null,\"client_credentials_location\":null},\"sslPublickeyId\":null,\"isSSLCertificate\":null,\"connectionTimeoutInMS\":60000}},\"bdf2e4f5-a195-40b5-a82a-1d76ab30e077\":{\"HTTPSEndpoint\":{\"id\":null,\"name\":\"ContactAPI\",\"retry\":{\"count\":1,\"afterMs\":0},\"active\":true,\"client\":{\"id\":null},\"details\":{\"url\":\"lvz26.wiremockapi.cloud/\",\"port\":0,\"httpVersion\":\"AUTO\",\"acceptedTLSVersions\":null,\"sslPublicCertificate\":null},\"partners\":null,\"protocol\":\"HTTPS\",\"direction\":\"OUTGOING\",\"description\":\"ContactAPI\",\"certificateId\":null,\"authentication\":{\"type\":\"NONE\",\"user\":null,\"token\":null,\"scopes\":null,\"headers\":[],\"password\":null,\"resource\":null,\"client_id\":null,\"token_url\":null,\"access_key\":null,\"aws_region\":null,\"grant_type\":null,\"privateKey\":null,\"proxy_host\":null,\"proxy_port\":null,\"secret_key\":null,\"token_type\":null,\"certificate\":null,\"cookie_name\":null,\"http_method\":null,\"absolute_url\":null,\"api_key_name\":null,\"service_name\":null,\"api_key_value\":null,\"authorize_url\":null,\"client_secret\":null,\"proxy_enabled\":null,\"session_token\":null,\"proxy_password\":null,\"proxy_protocol\":null,\"proxy_username\":null,\"responseTimeout\":0,\"api_key_location\":null,\"safe_resource_path\":null,\"optional_parameters\":[],\"privateKeyPassphrase\":null,\"proxy_authentication\":null,\"aws_signature_location\":null,\"usePersistentConnections\":false,\"authorization_header_name\":null,\"authorization_header_prefix\":null,\"client_credentials_location\":null},\"sslPublickeyId\":null,\"isSSLCertificate\":null,\"connectionTimeoutInMS\":60000}}}",
+  "endpoint_type_id" : "de4f95fa-d30d-4d50-998c-dd3d1293e83c",
+  "enabled" : true,
+  "bean_name" : "HTTPSClient-4ad2f29e-312f-4275-b083-0a1a8b331761",
+  "status" : {
+    "type" : "jsonb",
+    "value" : "{\"112c1cb8-4b9e-4d1a-a042-0bd031dc7d05\": true, \"81e359da-9454-40ba-b968-1273a3b8e37b\": true, \"bdf2e4f5-a195-40b5-a82a-1d76ab30e077\": true}",
+    "null" : false
+  },
+  "auth_token_config" : {
+    "type" : "jsonb",
+    "value" : "{}",
+    "null" : false
+  },
+  "avatar_id" : null,
+  "tag" : "EMPTY",
+  "active" : true,
+  "is_changed" : false,
+  "comment" : null,
+  "is_error" : false,
+  "base_tag" : "V1",
+  "revision" : 1
+}

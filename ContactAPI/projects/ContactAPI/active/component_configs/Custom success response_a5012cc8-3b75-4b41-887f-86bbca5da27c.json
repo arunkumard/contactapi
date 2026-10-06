@@ -1,0 +1,99 @@
+{
+  "component_config_id" : "a5012cc8-3b75-4b41-887f-86bbca5da27c",
+  "endpoint_config_json" : {
+    "type" : "jsonb",
+    "value" : "{\"crossRef\": [], \"services\": [], \"multistep\": [], \"operations\": []}",
+    "null" : false
+  },
+  "input_config_json" : {
+    "type" : "jsonb",
+    "value" : "{\"crossRef\": [], \"services\": [], \"multistep\": [], \"operations\": []}",
+    "null" : false
+  },
+  "output_config_json" : {
+    "type" : "jsonb",
+    "value" : "{\"crossRef\": [], \"services\": [], \"multistep\": [], \"operations\": [{\"transformer\": {\"id\": \"2585a5a9-d7fd-4794-b52c-3c9df98ff420\", \"name\": \"LIST_ARRAY_SIZE\", \"type\": \"List\", \"query\": null, \"inputs\": [{\"id\": \"eac94ebb-a49b-4df3-99be-90ea1511aa43\", \"root\": false, \"type\": \"list\", \"cached\": false, \"source\": \"/BackendResponse/contacts[]\", \"target\": \"/LIST_ARRAY_SIZE_INPUT/array[]\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": false, \"mapEmptyString\": false, \"targetJavaType\": \"java.lang.Object\"}], \"outputs\": [{\"id\": \"b7bdf7f4-cd67-4710-932f-68657b3dd8ec\", \"root\": false, \"type\": \"map\", \"cached\": false, \"source\": \"/LIST_ARRAY_SIZE_OUTPUT/size\", \"target\": \"/find-contactsAPIServerResponse/200/count\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": false, \"targetOrder\": 8.0, \"mapEmptyString\": false, \"sourceJavaType\": \"java.lang.Integer\", \"targetJavaType\": \"java.lang.Integer\"}], \"tableId\": null, \"configId\": null, \"disabled\": false, \"serviceId\": null, \"expression\": null}}, {\"map\": {\"id\": \"3b3f0698-411f-43f2-a90a-dabffb1991cf\", \"root\": true, \"type\": \"list\", \"cached\": false, \"source\": \"/BackendResponse/contacts[]\", \"target\": \"/find-contactsAPIServerResponse/200/contacts[]\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": false, \"targetOrder\": 1.0, \"mapEmptyString\": false}}]}",
+    "null" : false
+  },
+  "component_id" : "8ac5fe03-27a2-4e6a-a449-6a8893818223",
+  "service_id" : "8597f198-b0aa-4063-be5d-201beee0b3bd",
+  "endpoint_id" : null,
+  "parent_component_config_id" : "51833b78-2f31-4d07-9bc4-ee8087419f7a",
+  "component_config_order" : 1.0,
+  "action_id" : "06843b78-eab0-45da-afab-8c8277d7553f",
+  "name" : "Custom success response",
+  "description" : "",
+  "override_endpoint" : false,
+  "input_structure_json" : {
+    "type" : "jsonb",
+    "value" : "{\"maps\": [], \"mappedNodes\": [\"/BackendResponse/contacts[] pipeIn\", \"/find-contactsAPIServerResponse/200/contacts[]pipeOut\", \"/BackendResponse/contacts[] pipeIn\", \"/LIST_ARRAY_SIZE_INPUT/array[]0\", \"/LIST_ARRAY_SIZE_OUTPUT/size0\", \"/find-contactsAPIServerResponse/200/countpipeOut\"]}",
+    "null" : false
+  },
+  "output_structure_json" : {
+    "type" : "jsonb",
+    "value" : "{\"maps\": [{\"/find-contactsAPIServerResponse/200/contacts[]\": [{\"type\": \"list\", \"source\": {\"path\": \"/BackendResponse/contacts[]\", \"title\": \"contacts\", \"dataElementType\": \"documentArray\"}, \"target\": {\"path\": \"/find-contactsAPIServerResponse/200/contacts[]\", \"order\": 1, \"title\": \"contacts\", \"dataElementType\": \"documentArray\"}, \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [{\"key\": 1, \"title\": \"BackendResponse\", \"isLeaf\": false, \"isArray\": false, \"children\": [{\"key\": 2, \"title\": \"contacts[]\", \"isLeaf\": false, \"isArray\": true, \"parentKey\": 1, \"arrayIndex\": null}], \"parentKey\": 0}], \"targetTreeIndex\": [{\"key\": 1, \"title\": \"find-contactsAPIServerResponse\", \"isLeaf\": false, \"isArray\": false, \"children\": [{\"key\": 2, \"title\": \"200\", \"isLeaf\": false, \"isArray\": false, \"children\": [{\"key\": 3, \"title\": \"contacts[]\", \"isLeaf\": false, \"isArray\": true, \"parentKey\": 2, \"arrayIndex\": null}], \"parentKey\": 1}], \"parentKey\": 0}], \"mapConditionFormValue\": {}}}]}], \"tracks\": {}, \"transformer\": [{\"inputs\": {\"/LIST_ARRAY_SIZE_INPUT/array[]\": [{\"type\": \"list\", \"source\": {\"path\": \"/BackendResponse/contacts[]\", \"title\": \"contacts\", \"dataElementType\": \"documentArray\"}, \"target\": {\"path\": \"/LIST_ARRAY_SIZE_INPUT/array[]\", \"title\": \"array\", \"dataElementType\": \"objectArray\"}, \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [{\"key\": 1, \"title\": \"BackendResponse\", \"isLeaf\": false, \"isArray\": false, \"children\": [{\"key\": 2, \"title\": \"contacts[]\", \"isLeaf\": false, \"isArray\": true, \"parentKey\": 1, \"arrayIndex\": null}], \"parentKey\": 0}], \"targetTreeIndex\": [{\"key\": 1, \"title\": \"LIST_ARRAY_SIZE_INPUT\", \"isLeaf\": false, \"isArray\": false, \"children\": [{\"key\": 2, \"title\": \"array\", \"isLeaf\": false, \"isArray\": true, \"parentKey\": 1, \"arrayIndex\": null}], \"parentKey\": 0}], \"mapConditionFormValue\": {}}}]}, \"outputs\": {\"/find-contactsAPIServerResponse/200/count\": [{\"type\": \"map\", \"source\": {\"path\": \"/LIST_ARRAY_SIZE_OUTPUT/size\", \"title\": \"size\", \"dataElementType\": \"integer\"}, \"target\": {\"path\": \"/find-contactsAPIServerResponse/200/count\", \"order\": 8, \"title\": \"count\", \"dataElementType\": \"integer\"}, \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [], \"targetTreeIndex\": [], \"mapConditionFormValue\": {}}}]}, \"functionInfo\": {\"id\": \"da6bcf26-b479-4a50-b0f9-92968d9cab38\", \"name\": \"SizeOfArray\", \"category\": {\"id\": \"41a97f98-22ec-4738-9b60-e2e3bd2bc1f9\"}, \"internalName\": \"LIST_ARRAY_SIZE\"}}]}",
+    "null" : false
+  },
+  "endpoint_structure_json" : {
+    "type" : "jsonb",
+    "value" : "{\"maps\": []}",
+    "null" : false
+  },
+  "is_error" : false,
+  "no_of_errors" : 0,
+  "action_input_type" : null,
+  "config_service_id" : null,
+  "config_imap_id" : null,
+  "config_b2b_document_type_id" : null,
+  "config_document_id" : null,
+  "add_variables" : {
+    "type" : "jsonb",
+    "value" : "[]",
+    "null" : false
+  },
+  "drop_variables" : {
+    "type" : "jsonb",
+    "value" : "[]",
+    "null" : false
+  },
+  "plug_input_structure" : null,
+  "plug_output_structure" : null,
+  "config_plug_id" : null,
+  "override_plug" : false,
+  "config_java_service_id" : null,
+  "service_tag" : "EMPTY",
+  "endpoint_tag" : null,
+  "config_service_tag" : "",
+  "config_imap_tag" : "",
+  "config_b2b_document_type_tag" : "",
+  "active" : true,
+  "parent_component_config_service_tag" : "EMPTY",
+  "service_project_id" : "9e8d8265-b148-4a31-872b-4e33bb68f940",
+  "service_project_tag" : "EMPTY",
+  "config_service_project_id" : null,
+  "config_service_project_tag" : "",
+  "config_imap_project_id" : null,
+  "config_imap_project_tag" : "",
+  "config_b2b_document_type_project_id" : null,
+  "config_b2b_document_type_project_tag" : "",
+  "endpoint_project_id" : null,
+  "endpoint_project_tag" : null,
+  "config_plug_tag" : null,
+  "config_plug_project_id" : null,
+  "config_plug_project_tag" : null,
+  "config_java_service_tag" : "",
+  "config_java_service_project_id" : null,
+  "config_java_service_project_tag" : "",
+  "disabled" : false,
+  "config" : null,
+  "config_b2b_document_type_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_imap_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_java_service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_plug_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "endpoint_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "parent_component_config_service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "is_audit" : true,
+  "keys_with_order" : null
+}

@@ -1,0 +1,16 @@
+{
+  "id" : "da7d13b0-05e2-4b3b-ae14-8d9c1b6025a3",
+  "enabled" : false,
+  "service_id" : "8597f198-b0aa-4063-be5d-201beee0b3bd",
+  "is_processing" : false,
+  "service_tag" : "EMPTY",
+  "service_project_id" : "9e8d8265-b148-4a31-872b-4e33bb68f940",
+  "service_project_tag" : "EMPTY",
+  "active" : true,
+  "service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "is_info_id" : null,
+  "url" : null,
+  "type" : null,
+  "event_config" : null,
+  "runtime_id" : null
+}

@@ -1,0 +1,103 @@
+{
+  "component_config_id" : "ec9d0fc2-9108-40f8-a4a0-fed2a97a682c",
+  "endpoint_config_json" : {
+    "type" : "jsonb",
+    "value" : "{\"crossRef\": [], \"services\": [], \"multistep\": [], \"operations\": []}",
+    "null" : false
+  },
+  "input_config_json" : {
+    "type" : "jsonb",
+    "value" : "{\"crossRef\": [], \"services\": [], \"multistep\": [], \"operations\": [{\"map\": {\"id\": \"5e1ca0a3-cbed-4d50-9dca-37e0ccd1892b\", \"root\": true, \"type\": \"map\", \"cached\": false, \"source\": \"/find-contactsAPIServerRequest/queryParams\", \"target\": \"/HTTPSGetInput/queryParams\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": false, \"targetOrder\": 5.0, \"mapEmptyString\": false}}, {\"map\": {\"id\": \"32e060fe-240e-424b-bfc9-3d21503b145b\", \"root\": false, \"type\": \"setValue\", \"cached\": false, \"target\": \"/HTTPSGetInput/basePath\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": false, \"targetOrder\": 3.0, \"targetValue\": \"/contacts\", \"mapEmptyString\": false, \"targetJavaType\": \"java.lang.String\", \"variableSubstitution\": false}}]}",
+    "null" : false
+  },
+  "output_config_json" : {
+    "type" : "jsonb",
+    "value" : "{\"crossRef\": [], \"services\": [], \"multistep\": [], \"operations\": [{\"map\": {\"id\": \"fc622eea-cb9c-4c58-972e-8c53350267dc\", \"root\": false, \"type\": \"map\", \"cached\": false, \"source\": \"/HTTPSGetOutput/statusCode\", \"target\": \"/status\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": false, \"targetOrder\": 1.0, \"mapEmptyString\": false, \"sourceJavaType\": \"java.lang.Float\", \"targetJavaType\": \"java.lang.String\"}}, {\"map\": {\"id\": \"c8cf453e-466b-49bf-a8f3-0b85a75442a6\", \"root\": true, \"type\": \"map\", \"cached\": false, \"source\": \"/HTTPSGetOutput/response\", \"target\": \"/BackendResponse\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": true, \"targetOrder\": 1.0, \"mapEmptyString\": false, \"sourceJavaType\": \"java.lang.Object\"}}, {\"map\": {\"id\": \"e9bc7492-cccb-4a4f-80e5-11dc7506004f\", \"root\": true, \"type\": \"map\", \"cached\": false, \"source\": \"/HTTPSGetOutput/errors\", \"target\": \"/BackendError\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": true, \"targetOrder\": 1.0, \"mapEmptyString\": false, \"sourceJavaType\": \"java.lang.Object\"}}, {\"map\": {\"id\": \"a079d4ce-a263-4057-9d65-bd2cc7fa0709\", \"root\": true, \"type\": \"drop\", \"cached\": false, \"target\": \"/HTTPSGetOutput\", \"mapNull\": false, \"disabled\": false, \"extractXml\": false, \"extractJson\": false, \"targetOrder\": 1.0, \"mapEmptyString\": false}}]}",
+    "null" : false
+  },
+  "component_id" : "1dd81dfd-e452-4eb3-bbd7-bc6f0da00cbd",
+  "service_id" : "8597f198-b0aa-4063-be5d-201beee0b3bd",
+  "endpoint_id" : "4ad2f29e-312f-4275-b083-0a1a8b331761",
+  "parent_component_config_id" : "66cfab48-2de9-4888-8e21-e0aa7e670c01",
+  "component_config_order" : 2.0,
+  "action_id" : "1b4bc7a2-679b-4779-ad98-79fc11210459",
+  "name" : "call to back end",
+  "description" : "",
+  "override_endpoint" : false,
+  "input_structure_json" : {
+    "type" : "jsonb",
+    "value" : "{\"maps\": [{\"/HTTPSGetInput/basePath\": [{\"type\": \"setValue\", \"target\": {\"path\": \"/HTTPSGetInput/basePath\", \"order\": 3, \"title\": \"basePath\", \"dataElementType\": \"string\"}, \"values\": [{\"id\": \"9a4c93fe-e1ce-42f7-9f4d-205934df6386\", \"key\": \"/HTTPSGetInput/basePath\", \"type\": \"object\", \"order\": 3, \"title\": \"basePath\", \"isLeaf\": false, \"children\": [], \"setValue\": null, \"uiElement\": \"/contacts\", \"isSetValue\": false, \"childrenSet\": false, \"hasChildren\": false, \"dataElementType\": \"string\", \"encryption_required\": false}], \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [], \"targetTreeIndex\": [], \"mapConditionFormValue\": {}}, \"variableSubstitution\": false, \"overwritePipelineValue\": false}]}, {\"/HTTPSGetInput/queryParams\": [{\"type\": \"map\", \"source\": {\"path\": \"/find-contactsAPIServerRequest/queryParams\", \"title\": \"queryParams\", \"dataElementType\": \"document\"}, \"target\": {\"path\": \"/HTTPSGetInput/queryParams\", \"order\": 5, \"title\": \"queryParams\", \"dataElementType\": \"document\"}, \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [], \"targetTreeIndex\": [], \"mapConditionFormValue\": {}}}]}], \"mappedNodes\": [\"/HTTPSGetOutput\", \"/HTTPSGetOutputpipeOut\", \"/HTTPSGetInput/basePath actionIn\", \"/HTTPSGetInput actionIn\", \"/find-contactsAPIServerRequest/queryParams pipeIn\", \"/HTTPSGetInput/queryParams actionIn\", \"/HTTPSGetOutput/statusCode\", \"/statuspipeOut\", \"/HTTPSGetOutput/errors\", \"/BackendErrorpipeOut\"]}",
+    "null" : false
+  },
+  "output_structure_json" : {
+    "type" : "jsonb",
+    "value" : "{\"maps\": [{\"/HTTPSGetOutput\": [{\"type\": \"drop\", \"target\": {\"path\": \"/HTTPSGetOutput\", \"order\": 1, \"title\": \"HTTPSGetOutput\", \"dataElementType\": \"document\"}, \"values\": [{\"id\": \"9a4c93fe-e1ce-42f7-9f4d-205934df6386\", \"key\": \"/HTTPSGetInput/basePath\", \"type\": \"object\", \"order\": 3, \"title\": \"basePath\", \"isLeaf\": false, \"children\": [], \"setValue\": null, \"uiElement\": \"/contacts\", \"isSetValue\": false, \"childrenSet\": false, \"hasChildren\": false, \"dataElementType\": \"string\", \"encryption_required\": false}], \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [], \"targetTreeIndex\": [], \"mapConditionFormValue\": {}}, \"variableSubstitution\": false, \"overwritePipelineValue\": false}]}, {\"/status\": [{\"type\": \"map\", \"source\": {\"path\": \"/HTTPSGetOutput/statusCode\", \"title\": \"statusCode\", \"dataElementType\": \"number\"}, \"target\": {\"path\": \"/status\", \"order\": 1, \"title\": \"status\", \"dataElementType\": \"string\"}, \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [], \"targetTreeIndex\": [], \"mapConditionFormValue\": {}}}]}, {\"/BackendResponse\": [{\"type\": \"map\", \"source\": {\"path\": \"/HTTPSGetOutput/response\", \"title\": \"response\", \"dataElementType\": \"object\"}, \"target\": {\"path\": \"/BackendResponse\", \"order\": 1, \"title\": \"BackendResponse\", \"dataElementType\": \"document\"}, \"extractJson\": true, \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [], \"targetTreeIndex\": [], \"mapConditionFormValue\": {}}}]}, {\"/BackendError\": [{\"type\": \"map\", \"source\": {\"path\": \"/HTTPSGetOutput/errors\", \"title\": \"errors\", \"dataElementType\": \"object\"}, \"target\": {\"path\": \"/BackendError\", \"order\": 1, \"title\": \"BackendError\", \"dataElementType\": \"document\"}, \"extractJson\": true, \"mapCondition\": {\"isConditionSet\": false, \"sourceTreeIndex\": [], \"targetTreeIndex\": [], \"mapConditionFormValue\": {}}}]}], \"tracks\": {}, \"transformer\": []}",
+    "null" : false
+  },
+  "endpoint_structure_json" : {
+    "type" : "jsonb",
+    "value" : "{\"maps\": []}",
+    "null" : false
+  },
+  "is_error" : false,
+  "no_of_errors" : 0,
+  "action_input_type" : null,
+  "config_service_id" : null,
+  "config_imap_id" : null,
+  "config_b2b_document_type_id" : null,
+  "config_document_id" : null,
+  "add_variables" : {
+    "type" : "jsonb",
+    "value" : "[{\"id\": \"7cd936f9-59c7-422a-ac01-ba5eeb4b2447\", \"key\": \"/BackendResponse\", \"type\": \"node\", \"order\": 1, \"title\": \"BackendResponse\", \"value\": {}, \"children\": [{\"id\": \"e79aaa72-2c97-48df-8e5f-dd747781cda0\", \"key\": \"/BackendResponse/contacts[]\", \"type\": \"node\", \"order\": 1, \"title\": \"contacts\", \"value\": {\"type\": \"array\"}, \"isLeaf\": false, \"children\": [{\"id\": \"34e51602-3f92-4ecd-b97a-b1526e7dcbbe\", \"key\": \"/BackendResponse/contacts[]/id\", \"type\": \"node\", \"order\": 2, \"title\": \"id\", \"value\": {\"type\": \"integer\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"integer\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}, {\"id\": \"d0877545-a2b5-4db0-b5e9-7e62943da0ea\", \"key\": \"/BackendResponse/contacts[]/firstName\", \"type\": \"node\", \"order\": 3, \"title\": \"firstName\", \"value\": {\"type\": \"string\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"string\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}, {\"id\": \"91790b84-707f-462b-9bf0-3cfac864ef19\", \"key\": \"/BackendResponse/contacts[]/lastName\", \"type\": \"node\", \"order\": 4, \"title\": \"lastName\", \"value\": {\"type\": \"string\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"string\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}, {\"id\": \"feccd63b-25ff-4c04-a99d-a9f8399f53ac\", \"key\": \"/BackendResponse/contacts[]/email\", \"type\": \"node\", \"order\": 5, \"title\": \"email\", \"value\": {\"type\": \"string\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"string\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}, {\"id\": \"fc334d15-d34e-4c1f-91b9-95765cd61583\", \"key\": \"/BackendResponse/contacts[]/emailVerified\", \"type\": \"node\", \"order\": 6, \"title\": \"emailVerified\", \"value\": {\"type\": \"boolean\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"boolean\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}, {\"id\": \"4de514d2-4f7e-47ec-a5f5-ab70b2fd27ab\", \"key\": \"/BackendResponse/contacts[]/creationDate\", \"type\": \"node\", \"order\": 7, \"title\": \"creationDate\", \"value\": {\"type\": \"string\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"string\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}], \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"documentArray\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}], \"editAllow\": true, \"extractXml\": false, \"extractJson\": true, \"componentName\": \"call to back end\", \"dataElementType\": \"document\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"componentConfigName\": \"HTTPS\"}, {\"id\": \"8ba85d20-1b36-4ba5-ac1e-dc679c003313\", \"key\": \"/BackendError\", \"type\": \"node\", \"order\": 1, \"title\": \"BackendError\", \"value\": {}, \"children\": [{\"id\": \"4d8d1a57-40fe-4bb3-bbac-6b1dc8286204\", \"key\": \"/BackendError/code\", \"type\": \"node\", \"order\": 1, \"title\": \"code\", \"value\": {\"type\": \"string\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"string\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}, {\"id\": \"a713eb48-4e35-436e-ba97-bc42034c321d\", \"key\": \"/BackendError/message\", \"type\": \"node\", \"order\": 2, \"title\": \"message\", \"value\": {\"type\": \"string\"}, \"isLeaf\": true, \"editAllow\": true, \"extractXml\": false, \"childrenSet\": false, \"extractJson\": true, \"hasChildren\": false, \"dataElementType\": \"string\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"encryption_required\": false}], \"editAllow\": true, \"extractXml\": false, \"extractJson\": true, \"componentName\": \"call to back end\", \"dataElementType\": \"document\", \"componentConfigId\": \"ec9d0fc2-9108-40f8-a4a0-fed2a97a682c\", \"componentConfigName\": \"HTTPS\"}]",
+    "null" : false
+  },
+  "drop_variables" : {
+    "type" : "jsonb",
+    "value" : "[\"/HTTPSGetOutput\"]",
+    "null" : false
+  },
+  "plug_input_structure" : null,
+  "plug_output_structure" : null,
+  "config_plug_id" : null,
+  "override_plug" : false,
+  "config_java_service_id" : null,
+  "service_tag" : "EMPTY",
+  "endpoint_tag" : "V1",
+  "config_service_tag" : "",
+  "config_imap_tag" : "",
+  "config_b2b_document_type_tag" : "",
+  "active" : true,
+  "parent_component_config_service_tag" : "EMPTY",
+  "service_project_id" : "9e8d8265-b148-4a31-872b-4e33bb68f940",
+  "service_project_tag" : "EMPTY",
+  "config_service_project_id" : null,
+  "config_service_project_tag" : "",
+  "config_imap_project_id" : null,
+  "config_imap_project_tag" : "",
+  "config_b2b_document_type_project_id" : null,
+  "config_b2b_document_type_project_tag" : "",
+  "endpoint_project_id" : "9e8d8265-b148-4a31-872b-4e33bb68f940",
+  "endpoint_project_tag" : "V1",
+  "config_plug_tag" : null,
+  "config_plug_project_id" : null,
+  "config_plug_project_tag" : null,
+  "config_java_service_tag" : "",
+  "config_java_service_project_id" : null,
+  "config_java_service_project_tag" : "",
+  "disabled" : false,
+  "config" : {
+    "type" : "json",
+    "value" : "{}",
+    "null" : false
+  },
+  "config_b2b_document_type_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_imap_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_java_service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_plug_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "config_service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "endpoint_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "parent_component_config_service_project_mode_id" : "112c1cb8-4b9e-4d1a-a042-0bd031dc7d05",
+  "is_audit" : true,
+  "keys_with_order" : null
+}
